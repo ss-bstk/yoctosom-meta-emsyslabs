@@ -1,0 +1,7 @@
+KERNEL_SRC = "git://github.com/lucckb/somlabs-linux-scarthgap.git;protocol=http"
+SRC_URI = "${KERNEL_SRC};branch=${KERNEL_BRANCH}"
+KERNEL_BRANCH = "emsyslabs/imx_6.6.23-2.0.0/isi/ov5640"
+SRCREV = "${AUTOREV}"
+LINUX_VERSION = "6.6.23"
+LOCALVERSION = "-emsyslabs"
+PV = "${LINUX_VERSION}"
