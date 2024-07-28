@@ -3,23 +3,14 @@ This README file contains information on the contents of the meta-emsyslabs laye
 
 Installation
 ============
+* Run the following commands:
 
-* Get the yocto scarthgap
-    mkdir yocto-scarthgap
-    cd yocto-scarthgap
-    repo init -u https://github.com/SoMLabs/imx-meta-somlabs -b scarthgap -m imx-somlabs-6.6.23-2.0.0.xml
-    repo sync
-
-* Change directory to sources dir 
-    cd imx-meta-somlabs/sources
-* Clone emsyslabs layer into the source dir:
-    git clone https://github.com/lucckb/yoctosom-meta-emsyslabs.git meta-emsyslabs
-* Add following entry into the configuration file imx-somlabs-setup-release.sh
-   at line 180:
-    echo "BBLAYERS += \"\${BSPDIR}/sources/meta-emsyslabs\"" >> $BUILD_DIR/conf/bblayers.conf
-* Run the configuration script:
-    DISTRO=somlabs-xwayland MACHINE=spacesom-8mplus-cb source imx-somlabs-setup-release.sh -b build-spacesom-8mplus-cb-imx
-* build yocto image bitbake somlabs-image
+mkdir yocto-scarthgap
+cd yocto-scarthgap
+repo init -u https://github.com/lucckb/yoctosom-meta-emsyslabs -b master -m imx-emsyslabs-6.6.23-2.0.0.xml
+repo sync
+DISTRO=somlabs-xwayland MACHINE=spacesom-8mplus-cb source imx-emsyslabs-setup-release.sh -b build-spacesom-8mplus-cb-imx
+bitbake somlabs-image
 
 
 Libcamera tests
