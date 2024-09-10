@@ -14,7 +14,7 @@
   <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
 
   <remote name="somlabs"     fetch="https://github.com/SoMLabs"/>
-  <remote name="emsyslabs"   fetch="https://github.com/lucckb"/>
+  <remote name="emsyslabs"   fetch="https://github.com/xbstk"/>
 
   <project name="meta-arm" path="sources/meta-arm" remote="yocto" revision="8aa8a1f17f5b64bc691544f989f04fc83df98adb" upstream="scarthgap"/>
   <project name="meta-security" path="sources/meta-security" remote="yocto" revision="11ea91192d43d7c2b0b95a93aa63ca7e73e38034" upstream="scarthgap"/>

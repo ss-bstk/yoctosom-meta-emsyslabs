@@ -7,7 +7,7 @@ Installation
 
 mkdir yocto-scarthgap
 cd yocto-scarthgap
-repo init -u https://github.com/lucckb/yoctosom-meta-emsyslabs -b master -m imx-emsyslabs-6.6.23-2.0.0.xml
+repo init -u https://github.com/xbstk/yoctosom-meta-emsyslabs -b master -m imx-emsyslabs-6.6.23-2.0.0.xml
 repo sync
 DISTRO=somlabs-xwayland MACHINE=spacesom-8mplus-cb source imx-emsyslabs-setup-release.sh -b build-spacesom-8mplus-cb-imx
 bitbake somlabs-image
