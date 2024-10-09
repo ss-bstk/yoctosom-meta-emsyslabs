@@ -5,7 +5,7 @@
   <remote name="oe"          fetch="https://github.com/openembedded"/>
   <remote name="community"   fetch="https://github.com/Freescale"/>
   <remote name="somlabs"     fetch="https://github.com/SoMLabs"/>
-  <remote name="emsyslabs"   fetch="https://github.com/ss-adam"/>
+  <remote name="emsyslabs"   fetch="https://github.com/ss-bstk"/>
 
   <project name="poky" path="sources/poky" remote="yocto" revision="02eacd385eca7aa9cf25aaaa61427aa9c126e0bc" upstream="scarthgap"/>
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="a72010b414ee3d73888ac9cb4e310e8f05e13aea" upstream="scarthgap"/>
